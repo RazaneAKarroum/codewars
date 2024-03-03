@@ -9,5 +9,5 @@
 //my solution
 
 function multiply(number){
-    return number * (5 ** (number.toString().length));
-  }
+  return number >= 0 ? number * (5 ** (number.toString().length)) : number * (5 ** ((number.toString().length)-1));
+}
